@@ -1,0 +1,256 @@
+/* NAVBAR SECTION */
+
+body{
+    font-family: Roboto, sans-serif;
+    margin:auto;
+    padding:0;
+}
+
+.navbar{
+    height: 80px;
+    background: white;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    height: 80px;
+}
+
+.logo-img{
+    width:100px;
+    height:50px;
+    margin-left:170px;
+}
+
+.nav-item{
+    margin-left:30px;
+}
+
+.navbar-nav{
+    margin-left:120px;
+}
+
+.nav-icons{
+    display:flex;
+    flex-direction: row;
+    margin-left:150px;
+}
+.nav-icons .nav-item{
+    margin-left:10px;
+}
+
+/* TOP SECTION */
+
+#top-section{
+    width:76%;
+    margin:auto;
+    margin-top:100px;
+    display: flex;
+    flex-direction: row;
+    color:#1F2E35;
+}
+
+
+.content-section,.content-image{
+    width:50%;
+}
+.content-img{
+    width:100%;
+}
+
+.content-section{
+    font-weight: 600;
+    font-size:45px;
+}
+.colored-text{
+    margin-top:;
+    color: red;
+}
+.sub-heading{
+    width:90%;
+    font-size: 18px;
+    font-weight:400;
+}
+.btn{
+    background-color: #EE4248;
+    width:140px;
+    height:50px;
+    color:white;
+}
+
+/* MIDDLE SECTION */
+
+#middle-section{
+   
+    height:400px;
+    background-color:#F7F7F7;
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    margin-top:100px;
+}
+
+.middle-image-section{
+    width:50%;
+    margin-left:10%;
+}
+.middle-content-section{
+    width:41%;
+    margin-top:50px;
+    padding-left:10px;
+    margin-right:10%;
+}
+.middle-image{
+    margin:20px;
+    width:75%;
+    height:90%;
+}
+
+/* PRODUCT AND SERVICE SECTION */
+
+#service-section{
+    text-align: center;
+    margin:auto;
+    margin-top:100px;
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.cards{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.card-product{
+    width:23%;
+    text-align: left;
+    margin:40px;
+}
+
+.card-product-img{
+    width:80px;
+    margin-bottom: 20px;
+} 
+
+.card-product .btn{
+    width:120px;
+    height:40px;
+}
+
+
+/* CONTACT SECTION */
+
+#contact-section{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin:auto;
+    margin-top:100px;
+    gap:30px;
+    width:80%;
+}
+
+.address .logo-img{
+    margin-left:0;
+}
+.address,.contact{
+    margin-right:20px;
+}
+
+.contact{
+    margin-top:13px;
+}
+
+.brand-img{
+    width:430px;
+}
+
+#footer-section{
+    height:50px;
+    background-color: #EE4248;
+    color:white;
+    text-align: center;
+    padding-top:12px;
+}
+
+
+/* MOBILE VIEW */
+
+@media only screen and (max-width: 600px) {
+
+/* TOP SECTION */
+
+.logo-img{
+    margin-left: 20px;
+}
+
+#top-section{
+    flex-direction: column;
+    margin-top:50px;
+}
+.content-image{
+    order:1;
+}
+.content-section{
+    order:2;
+    margin-top:20px;
+    font-weight: 600;
+    font-size:33px;
+}
+.heading{line-height: 40px;}
+
+.sub-heading{width:100%;}
+
+.content-section,.content-image{
+    width:100%;
+    text-align:center;
+}
+
+/* MIDDLE SECTION */
+
+#middle-section{
+    flex-direction: column;
+    width:100%;
+    height:800px;
+    padding: 2% 6%;
+}
+
+.middle-image-section, .middle-content-section{
+    margin:auto;
+    margin-top:10px;
+    padding:0;
+    width:100%;
+    
+}
+
+.middle-section-header{
+    padding: 1.5%;
+    text-align: center;
+}
+
+.middle-image{
+margin-left: 55px;
+}
+
+/* SERVICE SECTION */
+
+.cards{
+    flex-direction: column;   
+}
+
+#service-section{
+    margin-top:50px;
+}
+
+.card-product{
+    width:80%;
+    text-align: center;
+}
+
+#contact-section{
+    flex-direction: column;
+    margin-top:50px;
+    gap:10px;
+}
+
+}
